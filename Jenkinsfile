@@ -15,7 +15,7 @@ pipeline{
         }
         stage('Checkout from Git'){
             steps{
-                git branch: 'master', url: ''
+                git branch: 'master', url: 'https://github.com/lloyd-theophilus/lloyd-theophilus-Netflix-Clone-K8s-End-to-End.git'
             }
         }
         stage("Sonarqube Analysis"){
